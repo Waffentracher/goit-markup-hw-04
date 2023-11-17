@@ -356,7 +356,9 @@ img {
   padding: 32px 0;
 }
 .social-boxs {
-  padding-bottom: 25px;
+  gap: 24;
+  justify-content: center;
+  display: flex;
 }
 .social-media {
   display: flex;
@@ -430,6 +432,8 @@ img {
 }
 .portfolio-items:hover {
   transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .container-app {
   position: relative;
@@ -447,7 +451,7 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
+  transform: translateY(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
