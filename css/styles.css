@@ -371,6 +371,7 @@ img {
   gap: 24px;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-item-icon {
   fill: #f4f4fd;
@@ -385,12 +386,12 @@ img {
   justify-content: center;
 }
 
-.social-media-item:hover {
+.social-media-item-link:hover {
   cursor: pointer;
   background-color: #404bbf;
   border-radius: 50%;
 }
-.social-media-item:focus {
+.social-media-item-link:focus {
   cursor: pointer;
   background-color: #404bbf;
   border-radius: 50%;
