@@ -3,7 +3,7 @@ body {
   color: #434455;
   background-color: #fff;
 }
-*,
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -139,6 +139,7 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 2px;
 }
 
 .header-nav:hover,
@@ -190,11 +191,11 @@ img {
     ),
     url("/images/back-image.jpg");
   background-size: cover;
-
+  max-width: 1440px;
   padding: 188px 0;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -226,7 +227,8 @@ img {
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -288,7 +290,7 @@ img {
   background: var(--CLOUD, #f4f4fd);
   margin-bottom: 8px;
   align-items: center;
-  align-items: center;
+  justify-content: center;
 }
 
 .advan-item-icon {
@@ -415,6 +417,7 @@ img {
   row-gap: 48px;
 }
 .portfolio-items:hover {
+  transform: translateY(0%);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -475,10 +478,7 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -533,7 +533,7 @@ img {
 }
 .social-media-item-footer {
   display: flex;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: #404bbf;
   width: 40px;
@@ -555,12 +555,13 @@ img {
   justify-content: center;
 }
 
-.social-media-item-footer:hover .social-media-item-link-footer:hover {
+.social-media-item-link-footer:hover {
   cursor: pointer;
   background-color: #31d0aa;
 }
-.social-media-item-footer:focus .social-media-item-link-footer:focus {
+.social-media-item-link-footer:focus {
   background-color: #31d0aa;
+  cursor: pointer;
 }
 .container-footer {
   display: flex;
